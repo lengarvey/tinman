@@ -16,6 +16,7 @@ toto = Toto::Server.new do
   # Add your settings here
   # set [:setting], [value]
   # 
+  set :url,       'http://bottledup.net'
   set :author,    'Leonard Garvey'                               # blog author
   set :title,     'Leonard Garvey, on programming, ruby, mongo and more'                   # site title
   # set :root,      "index"                                   # page to load on /
