@@ -9,4 +9,4 @@ For fun I pushed my finished answers onto github.
 If you're horribly interested you can see them at: https://github.com/lengarvey/ruby_koans.
 I've also got the code for this blog up there (although as I state in the readme I'd really recommend most people use something more awesome).
 
-![Ruby Koan finish](/ruby_koan.png)
+![Ruby Koan finish](/images/ruby_koan.png)
