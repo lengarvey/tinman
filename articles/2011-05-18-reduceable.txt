@@ -1,4 +1,4 @@
---- 
+author: Leonard Garvey
 title: Reduceable
 date: 18/05/2011
 
@@ -18,6 +18,7 @@ which should address all of the above problems.
 You can find the full source for this gem at: http://github.com/lengarvey/reduceable
 
 Here is a taste of how it works:
+
 ```sh_ruby
 require 'mongo_mapper'
 require 'reduceable'
