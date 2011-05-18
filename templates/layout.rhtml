@@ -1,17 +1,43 @@
 <!doctype html>
 <html>
   <head>
+    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="/css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen, projection">
+    <![endif]-->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
+    <link type="text/css" rel="stylesheet" href="/sh/sh_vim-dark.min.css"> 
+    <script type="text/javascript" src="/sh/sh_main.min.js"></script> 
+    <script type="text/javascript" src="/sh/sh_ruby.min.js"></script> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
     <title><%= title %></title>
   </head>
-  <body>
-    <section>
-      <%= yield %> 
+  <body onload='sh_highlightDocument();'>
+    <header>
+    <h1>% cd /home/leonard_garvey && more blog</h1>
+    </header>
+    <aside>
+      <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/index.xml">Feed</a></li>
+      <li><a href="http://twitter.com/#!/lgarvey">Twitter</a></li>
+      <li><a href="https://github.com/lengarvey">Github</a></li>
+      </ul>
+      </nav>
+    </aside>
+    <section class="container">
+      <div class="span-18 prepend-3 append-3 last"
+        <%= yield %> 
+      </div>
     </section>
-    <footer>
-      powered by <a href="http://cloudhead.io/toto">toto</a>
+    <footer class="container">
+      <div class="span-10 prepend-14 last">
+        powered by <a href="http://github.com/lengarvey/toto">toto</a> and <a href="http://github.com/lengarvey/redcarpet">redcarpet</a>
+      </div>
     </footer>
   </body>
 </html>
