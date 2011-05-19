@@ -2,12 +2,10 @@ author: Leonard Garvey
 title: Reduceable
 date: 18/05/2011
 
-In the last post I went through some stuff/problems with map/reduce. As a summary:
+In the last post I went through some stuff/problems with map/reduce. As a summary and to introduce a couple of other specific issues:
 
 1. It's hard to understand.
 2. It's not obvious how to do mapreduce in ruby.
-
-And to introduce a couple of other specific issues:
 3. It sucks writing javascript in your ruby app.
 4. [Blogs](http://www.chrisumbel.com/article/map_reduce_mongodb_mongomapper_rails) on the internet
 seem to recommend that you recalculate the map/reduce every time you need to access the data.
