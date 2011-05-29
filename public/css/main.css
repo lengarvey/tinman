@@ -31,8 +31,6 @@ header, footer, section, article {
 }
 body > header {
   width: 100%;
-  margin-top: 50px;
-  height: 20px;
 }
 
 #content {
@@ -70,6 +68,7 @@ body > header > h1 {
 	padding-left: 30px;
   font-size: 15px;
   font-weight: normal;
+  font-family: Monaco, "Courier New", monospace;
   color: white;
 }
 .post header {
@@ -102,7 +101,6 @@ body > header > h1 {
 .more a:hover { text-decoration: underline }
 body > header {
         background-color: black;
-	padding-top: 0px;
 	margin-bottom: 10px;
 }
 h1, h2, h3, h4 {
