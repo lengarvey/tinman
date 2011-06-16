@@ -1,18 +1,18 @@
 nav {
-  position: fixed;
-  top: 100px;
-  left: 0px;
+  position: absolute;
+  top: 0px;
+  left: 600px;
+  padding-top: 0px;
 }
-nav ul {
-  padding-left: 0px;
-}
-nav li {
+nav a {
   background-color: #333;
   color: white;
   padding: 5px;
-  padding-left: 40px;
+  padding-left: 10px;
   padding-right: 10px;
-  
+  margin-top: 60px;
+  text-decoration: none;
+  vertical-align: top;
 }
 nav li:hover {
   background-color: #ccc;
