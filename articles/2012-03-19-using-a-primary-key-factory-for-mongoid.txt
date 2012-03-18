@@ -44,8 +44,7 @@ end
 
 Mongoid.configure do |config|
   puts config.inspect
-  config.master = Mongo::Connection.new.db(Mongoid.database.name, :pk =>
-PKFactory.new)
+  config.master = Mongo::Connection.new.db(Mongoid.database.name, :pk => PKFactory.new)
 end
 ```
 Afterwards just change your user model:
