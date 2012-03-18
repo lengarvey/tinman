@@ -45,8 +45,8 @@ end
 
 This is a fairly contrived example, but it gives you a good idea of the direction this should be heading in.
 I'm trying to abstract away the complexity of writing common map/reduce functions. 
-This addresses points 1, 2 and 3 above. The 4th point is handled by an ActiveRecord callback 'after_save'
-which is inserted into the BlogPost model which will invalidate the cached records and cause the count_by
-and sum_of functions to force a recalculation of the map/reduce results.
+This addresses points 1, 2 and 3 above. The 4th point is handled by an ActiveRecord callback 'after\_save'
+which is inserted into the BlogPost model which will invalidate the cached records and cause the count\_by
+and sum\_of functions to force a recalculation of the map/reduce results.
 
 It's definitely not perfect, but I'm hopeful I can make this into something useful.
