@@ -1,18 +1,40 @@
 nav {
-  position: absolute;
-  top: 0px;
-  left: 600px;
-  padding-top: 0px;
+  display: block;
+  text-align: left;
+  line-height: 1em;
+  width: 710px;
+  margin-left: auto;
+  margin-right: auto;
 }
 nav a {
-  background-color: #333;
-  color: white;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 60px;
   text-decoration: none;
   vertical-align: top;
+}
+nav a.text {
+  font-size: 26px;
+  line-height: 0.85em;
+  margin-right: 10px;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+nav a.text i {
+  font-style: normal;
+}
+
+i.light {
+  color: #eee;
+}
+i.dark {
+  color: #666;
+}
+nav aside {
+  float: right;
+}
+nav a img {
+  width: 22px;
 }
 nav li:hover {
   background-color: #ccc;
@@ -31,6 +53,7 @@ header, footer, section, article {
 }
 body > header {
   width: 100%;
+  margin-bottom: 1.4em;
 }
 
 #content {
@@ -82,6 +105,7 @@ body > header > h1 {
 }
 .post {
 	margin-bottom: 30px;
+  font-size: 16px;
 }
 .post:last-child {
   margin-bottom: 10px;
@@ -100,16 +124,19 @@ body > header > h1 {
 }
 .more a:hover { text-decoration: underline }
 body > header {
-        background-color: black;
-	margin-bottom: 10px;
+  background-color: #999;
+  padding: 5px;
 }
 h1, h2, h3, h4 {
   display: inline;
   margin: 0;
-  font-weight: 600;
+  font-weight: 400;
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #3e3e3e;
 }
 pre {
   padding: 20px;
+
 }
 blockquote {
   font-style: italic;
@@ -122,3 +149,4 @@ body > footer {
   font-size: 18px;
   color: #888;
 }
+

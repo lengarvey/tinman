@@ -9,32 +9,29 @@
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
-    <link type="text/css" rel="stylesheet" href="/js/sh_vim-dark.min.css"> 
-    <script type="text/javascript" src="/js/sh_main.min.js"></script> 
-    <script type="text/javascript" src="/js/sh_ruby.min.js"></script> 
-    <script type="text/javascript" src="/js/sh_javascript.min.js"></script> 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+    <link type="text/css" rel="stylesheet" href="/js/sh_vim-dark.min.css">
+    <script type="text/javascript" src="/js/sh_main.min.js"></script>
+    <script type="text/javascript" src="/js/sh_ruby.min.js"></script>
+    <script type="text/javascript" src="/js/sh_javascript.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200' rel='stylesheet' type='text/css'>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title><%= title %></title>
   </head>
   <body onload='sh_highlightDocument();'>
     <header>
-    <h1>leonard_garvey@home:~/$</h1><br/>
-    <h1>leonard_garvey@home:~/$</h1><br/>
-    <h1>leonard_garvey@home:~/$</h1><br/>
-    <h1>leonard_garvey@home:~/$</h1><br/>
-    <h1>leonard_garvey@home:~/$ curl http://bottledup.net | more</h1><br/>
-    <aside>
       <nav>
-      <a class="text" href="/">Home</a>
-      <a class="text" href="/about">About</a>
-      <a href="http://twitter.com/#!/lgarvey">Twitter</a>
-      <a href="https://github.com/lengarvey">Github</a>
+      <a href="/" class="text"><i class="light">LEONARD</i> <i class="dark">GARVEY</i></a>
+        <a href="http://twitter.com/lgarvey"><img src="/images/icons/twitter.png"/></a>
+        <a href="https://github.com/lengarvey"><img src="/images/icons/github.png"/></a>
+        <a href="mailto:hi@bottledup.net"><img src="/images/icons/mail.png"/></a>
+        <aside>
+        <a href="/about">ABOUT</a>
+        </aside>
       </nav>
-    </aside>
     </header>
     <section class="container">
     <div class="span-18 prepend-3 append-3 last">
-        <%= yield %> 
+        <%= yield %>
       </div>
     </section>
     <footer class="container">
