@@ -136,7 +136,7 @@ h1, h2, h3, h4 {
 }
 pre {
   padding: 20px;
-
+  overflow-x: scroll;
 }
 blockquote {
   font-style: italic;
