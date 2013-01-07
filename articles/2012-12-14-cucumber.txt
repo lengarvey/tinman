@@ -1,0 +1,49 @@
+---
+title: Cucumber
+date: 14/12/2012
+
+Cucumber is a common tool used in many Rails applications to provide Acceptance/Integration
+testing. It uses a DSL called [Gherkin](https://github.com/cucumber/gherkin) which is a
+[Business Readable DSL](http://www.martinfowler.com/bliki/BusinessReadableDSL.html).
+
+The idea is that you write the features of your application into Scenarios which are then
+executed by Cucumber. As a developer you also provide the steps to execute those Scenarios
+often using a tool like [Capybara](https://github.com/jnicklas/capybara).
+
+In the Rails community Cucumber can be slightly contraversial but I've come to believe that Cucumber is greatly misunderstood within the community.
+
+<blockquote class="twitter-tweet tw-align-center" data-in-reply-to="279087947070980096"><p>@<a href="https://twitter.com/twe4ked">twe4ked</a> I’ve come to really like Cucumber. I think it gets an unfair rap from a lot of devs.</p>&mdash; Leonard Garvey (@lgarvey) <a href="https://twitter.com/lgarvey/status/279088834115940352" data-datetime="2012-12-13T05:02:17+00:00">December 13, 2012</a></blockquote>
+
+
+A really great conversation followed on Twitter, but I do often feel constrained by 140 characters.
+
+
+### Is love too strong a word? ###
+I really like using Cucumber. Whenever I write a Feature I feel like I'm focused implementing that
+functionality, even if the very next thing I do is write a few specs for models and controllers.
+I feel that if I ever get sidetracked I can get right back into the flow by just running my Cuke.
+
+It's for this reason that I completely agree with Chris Parsons when he says that [Cucumber isn't a testing tool](http://chrismdp.com/2012/09/cucumber-isnt-a-testing-tool/)
+
+### A sales issue
+
+Besides the whole web-steps awfulness, which is extremely well explained by Jonas Nicklas in his
+great post [You're cuking it wrong](http://www.elabs.se/blog/15-you-re-cuking-it-wrong), I think Cucumber has a sales problem.
+
+<blockquote class="twitter-tweet tw-align-center" data-in-reply-to="279102964893904896"><p>@<a href="https://twitter.com/mwotton">mwotton</a> @<a href="https://twitter.com/lgarvey">lgarvey</a> User stories are a great way to describe a system. Cucumber's problem is claiming that you can run them with little effort</p>&mdash; Warren Seen (@warren_s) <a href="https://twitter.com/warren_s/status/279103716773228545" data-datetime="2012-12-13T06:01:26+00:00">December 13, 2012</a></blockquote>
+
+1. Understanding how to set it up as a newbie can be difficult. It isn't well described on the [Cucumber website](http://cukes.info/)
+2. It promises a great deal: "The text is written in a business-readable domain-specific language and serves as documentation, automated tests and development-aid - all rolled into one format"
+  The issue with this type of promise is that it doesn't seem to fit in with how most devs view the world. They have
+  automated tests (written in Ruby!) so don't see the need for more wordy abstraction. They view the Features as something
+  else to maintain in addition to tests and documentation.
+3. Cucumber is often sold as a way for Business people and devs to communicate. I'd argue instead that it's a way for devs and anyone else to communicate,
+  you don't get benefit from Cucumber only if you can convince your Business Analyst to read your feature files.
+  You should get benefit from Cucumber ever time you on-board a new developer, every time you need to remind yourself, or another dev,
+  how a complex feature works (at least at a high level).
+
+If Cucumber was instead pitched as a tool that helped you keep simple system requirements
+and your app in-sync then I think it would get more acceptance.
+
+
+
