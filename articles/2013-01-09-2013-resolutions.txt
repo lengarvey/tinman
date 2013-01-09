@@ -54,6 +54,7 @@ General Assembly at the end of the year.
 4. I'd really love to teach again.
 5. Continue to participate in the Ruby community going to events like [RoRo](http://ruby.org.au/meetups/syd.html), [Railscamp](http://railscamps.com/) 
 and the upcoming [RubyConf](http://rubyconf.org.au/).
+6. Blog at least once a week.
 
 ![Railscamp](/images/railscamp.jpg)
 
