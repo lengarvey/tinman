@@ -1,0 +1,64 @@
+---
+title: 2013 Resolutions
+date: 09/01/2013
+
+Over the past few years I've been setting goals for myself, and achieving most of them
+but it becomes easy to weasle out of some goals if they aren't written down. So in the
+spirit of [@awws](https://twitter.com/awws)'s post [2013 New Year's Resolutions](http://blog.tundramonkey.com/2013/01/07/2013-new-year-s-resolutions)
+I've decided to write up my goals for the year and post them publically.
+
+Health
+------
+
+Towards the end of last year I got a personal trainer (Rebecca of [Becompetitive Fitness](http://www.becompetitivefitness.com) is amazing)
+and started my fitness journey. I lost [~6kg over 2 months and put on a bit of muscle](http://i.imgur.com/UH1eB.jpg).
+More importantly than the numbers I broke my Coca-Cola habit, and established new routines which
+involve me going to the gym multiple times per week. I found myself sleeping better and experiencing
+less ups and down related to sugar levels. I've still got a bit of work to do here (cutting out all sweets for instance).
+
+So my goal for this year is to step it up a notch:
+
+1. Lose 15kg. (Actually I'd like to hit this by June but it would be pretty close to my goal weight)
+2. Keep an average of 4 exercise sessions per week.
+3. Cut out the afternoon and after-dinner sugary treats. I'll be able to incoporate dessert into my weekly cheat meal instead.
+4. Take up a martial art.
+
+Overall I just want to be able to feel good about my fitness and health. One more thing that I'm doing
+is taking up a martial art. I've decided to give Krav Maga a go and have booked an induction session
+for later this month.
+
+Personal
+--------
+
+Last year I travelled through Western Europe with my lovely girlfriend, capping off the trip with 3 days
+snowboarding in the Dolomites.
+
+![Dolomites](/images/dolomites.jpg)
+
+This year I'd like to do some more snowboarding, and to plan (but possible not execute) my next big trip.
+
+1. Spend at least a week snowboarding.
+2. Plan the next big proper holiday.
+3. Get on top of my financial situation. This is already in progress with another housemate moving in shortly.
+
+Professional
+------------
+
+In 2012 I made a huge change in my career moving firmly into a Rails focused role as Lead Developer
+for [Airtasker](https://www.airtasker.com). I also taught a Ruby on Rails focused course for
+General Assembly at the end of the year.
+
+1. Start contributing to an Open Source project.
+2. Pick up some small contract work outside of work hours.
+3. See where the Airtasker ride takes me over the year.
+4. I'd really love to teach again.
+5. Continue to participate in the Ruby community going to events like [RoRo](http://ruby.org.au/meetups/syd.html), [Railscamp](http://railscamps.com/) 
+and the upcoming [RubyConf](http://rubyconf.org.au/).
+
+![Railscamp](/images/railscamp.jpg)
+
+Overall I feel that my fitness goals are going to be the most challenging, but they're also my most important
+ones for this year. Last year I really changed up my professional life with a big job change, focusing heavily
+on Rails and web development, and then teaching later in the year.
+
+
