@@ -76,6 +76,7 @@ body > header {
   float: right;
   line-height: 43px;
   margin-right: 30px;
+  margin-left: 10px;
 }
 a {
   color: #b83000;
@@ -106,6 +107,7 @@ body > header > h1 {
 .post {
 	margin-bottom: 30px;
   font-size: 16px;
+  position: relative;
 }
 .post:last-child {
   margin-bottom: 10px;
