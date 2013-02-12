@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link rel="stylesheet" title="Tomorrow Night Bright" href="styles/tomorrow-night-bright.css">
+<script src="highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<style type='text/css'>
+body {
+  font-family: 'Helvetica';
+  letter-spacing:-5px;
+  background:#222;
+  background-size:100%;
+  color:#fff;
+  margin:0;
+  padding:0;
+  font-weight:bold;
+  font-size: 15vw;
+  vertical-align: middle;
+}
+div {
+  width: 100%;
+  text-align: center;
+}
+h1, h2, h3, p {
+  margin:0;
+}
+
+pre {
+  white-space: pre-wrap;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+pre.nopad {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+pre.nopad code {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 1.5vw !important;
+}
+
+em, a {
+  font-style:normal;
+  color:#8dbd0c;
+}
+
+a {
+  background: #34d0e7;
+  color:#000;
+  text-decoration:none;
+  font-size: 6vw;
+}
+
+sub {
+  display: block;
+  font-size: 6vw;
+  color: #62FF00;
+}
+sub.white {
+  color: white;
+}
+
+code {
+  display: inline-block;
+  font-family: Monaco;
+  font-size: 3vw;
+  letter-spacing:2px;
+  margin-left: 2em;
+  margin-top: 20px;
+}
+
+code.smaller {
+  font-size: 34px;
+}
+
+
+img {
+  width:100%;
+}
+
+div {
+  cursor:pointer;
+  cursor:hand;
+  position:absolute;
+  top:0;
+  left:0;
+  max-width: 100%;
+}
+</style><script type='text/javascript'>
+window.onload = function() {
+    var s = document.getElementsByTagName('div'), cur = 0;
+    if (!s) return;
+    function go(n) {
+        cur = n;
+        var i = 1e3, e = s[n];
+        for (var k = 0; k < s.length; k++) s[k].style.display = 'none';
+        e.style.display = 'inline-block';
+        if (e.firstChild.nodeName === 'IMG') {
+            document.body.style.backgroundImage = 'url(' + e.firstChild.src + ')';
+            e.firstChild.style.display = 'none';
+        } else {
+            document.body.style.backgroundImage = '';
+        }
+        if (window.location.hash !== n) window.location.hash = n;
+    }
+    document.onclick = function() {
+        go(++cur % (s.length));
+    };
+    document.onkeydown = function(e) {
+        (e.which === 39) && go(Math.min(s.length - 1, ++cur));
+        (e.which === 37) && go(Math.max(0, --cur));
+    };
+    function parse_hash() {
+        return Math.max(Math.min(
+            s.length - 1,
+            parseInt(window.location.hash.substring(1), 10)), 0);
+    };
+    if (window.location.hash) cur = parse_hash() || cur;
+    window.onhashchange = function() {
+        var c = parse_hash();
+        if (c !== cur) go(c);
+    };
+
+    go(cur);
+};
+</script></head><body>
+<div>Hi, I'm Leonard
+  <sub><a href="https://twitter.com/lgarvey">@lgarvey</a></sub>
+  <sub>Chief Dev @ <a href="https://www.airtasker.com">Airtasker</a></sub>
+</div>
+<div>Learning <em>Rails</em></div>
+<div>Ruby</div>
+<div>HTML</div>
+<div>CSS</div>
+<div>SCSS</div>
+<div>Javascript</div>
+<div>CoffeeScript</div>
+<div>
+  <sub class="white">
+  ActiveRecord
+  <em>Routes</em>
+  Controllers
+  <em>Views</em>
+  ERB
+  <em>HAML</em>
+  Slim
+  <em>Asset Pipeline</em>
+  RSpec
+  <em>Cucumber</em>
+  Capybara
+  <em>Fixtures</em>
+  Factories
+  <em>Service Layers</em>
+  AJAX
+  <em>REST</em>
+  Gems
+  <em>Bundler</em>
+  RVM
+  <em>rbenv</em>
+  ActiveModel
+  <em>AREL</em>
+  ActionPack
+  <em>ActionMailer</em>
+  ActiveSupport
+  <em>ActionMailer</em>
+  SQL
+  <em>MySQL</em>
+  Postgres
+  <em>Queuing</em>
+  Redis
+  <em>Memcache</em>
+  </sub>
+</div>
+<div><em>O</em>M<em>G</em>W<em>T</em>F<em>B</em>B<em>Q</em></div>
+<div>O<em>M</em>G<em>W</em>T<em>F</em>B<em>B</em>Q</div>
+<div><em>O</em>M<em>G</em>W<em>T</em>F<em>B</em>B<em>Q</em></div>
+<div>O<em>M</em>G<em>W</em>T<em>F</em>B<em>B</em>Q</div>
+<div><em>O</em>M<em>G</em>W<em>T</em>F<em>B</em>B<em>Q</em></div>
+<div>O<em>M</em>G<em>W</em>T<em>F</em>B<em>B</em>Q</div>
+<div><em>O</em>M<em>G</em>W<em>T</em>F<em>B</em>B<em>Q</em></div>
+<div>O<em>M</em>G<em>W</em>T<em>F</em>B<em>B</em>Q</div>
+<div><em>O</em>M<em>G</em>W<em>T</em>F<em>B</em>B<em>Q</em></div>
+<div>O<em>M</em>G<em>W</em>T<em>F</em>B<em>B</em>Q</div>
+<div><em>O</em>M<em>G</em>W<em>T</em>F<em>B</em>B<em>Q</em></div>
+<div>O<em>M</em>G<em>W</em>T<em>F</em>B<em>B</em>Q</div>
+<div>Don't learn <em>Rails</em></div>
+<div><em>Learn</em> Ruby</div>
+<div>Learn HTML+CSS<sub>and a bit of js</sub></div>
+<div>Sinatra and Postgres</div>
+<div><em>Finally</em> learn Rails</div>
+<div>Community</div>
+<div><em>Ask for Help</em></div>
+<div>Share all your bad code</div>
+<div>Share all your <em>good</em> code</div>
+<div><em>Share all your code</em></div>
+<div>Persevere</div>
+<div><em>?</em></div>
