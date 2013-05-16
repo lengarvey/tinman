@@ -17,7 +17,7 @@ You can find the full source for this gem at: http://github.com/lengarvey/reduce
 
 Here is a taste of how it works:
 
-```sh_ruby
+```ruby
 require 'mongo_mapper'
 require 'reduceable'
 

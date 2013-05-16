@@ -12,7 +12,7 @@ the name of the user rather than the ```_id```. Obviously I could have
 just altered the show action in ```users_controller.rb``` to query by
 name:
 
-```sh_ruby
+```ruby
 @user = User.find(params[:name])
 ```
 
@@ -33,7 +33,7 @@ easy way to use a primary key factory. No problems!
 
 Create config/initializers/mongoid.rb and paste the following:
 
-```sh_ruby
+```ruby
 class PKFactory
   def create_pk(row)
     puts "creating #{row.inspect}"
@@ -49,7 +49,7 @@ end
 ```
 Afterwards just change your user model:
 
-```sh_ruby
+```ruby
 field _id, :type => String
 ```
 

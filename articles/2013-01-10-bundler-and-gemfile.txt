@@ -31,7 +31,7 @@ You declare your application dependencies in your ```Gemfile``` and then you run
 create the ```Gemfile.lock``` file. When your Rails application starts it reads the ```Gemfile.lock``` file so it can
 figure out which gems to require. This work is done in your ```config/boot.rb``` file. You'll see something like:
 
-```sh_ruby
+```ruby
 require 'rubygems'
 gemfile = File.expand_path('../../../../Gemfile', __FILE__)
 

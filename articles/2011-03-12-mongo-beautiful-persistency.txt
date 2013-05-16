@@ -23,7 +23,7 @@ I started looking at a couple of Document oriented databases: CouchDB and MongoD
 This type of database stores everything into documents which are just collections of key/value pairs.
 For example here is a very simple document:
 
-```sh_ruby
+```ruby
 {  "_id" : ObjectId("4d7a1bd99674334026000001"), 
    "title" : "First Post", 
    "text" : "Welcome..."
@@ -47,7 +47,7 @@ Introducing MongoMapper
 
 1. Declare your Model:
 
-```sh_ruby
+```ruby
 class Article
   include MongoMapper::Document
 
@@ -62,7 +62,7 @@ end
 
 2. Use your model
 
-```sh_ruby
+```ruby
   @article = Article.new
   @article.title = params[:title]
   @article.text = params[:text]

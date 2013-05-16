@@ -5,7 +5,7 @@ date: 13/12/2012
 Recently while working on [Airtasker](https://www.airtasker.com)
 we got the following error from our (pretty extensive) Rspec test suite:
 
-```sh_ruby
+```ruby
 Failures:
 
   1) UsersController#show with user actions gets user actions
@@ -30,7 +30,7 @@ I'm fairly certain he was joking, but I wanted to know exactly what was happenin
 I was able to replicate the issue in the rails console just by manually executing the test
 (which is a fantastic way of understanding code)
 
-```sh_ruby
+```ruby
 irb(main):018:0> a
 => []
 irb(main):019:0> b

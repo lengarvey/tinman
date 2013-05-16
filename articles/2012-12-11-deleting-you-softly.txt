@@ -32,7 +32,7 @@ them as deleted. In Rails this might mean you use [permanent_records](http://git
 which lets you use a `deleted_at` timestamp field in your models to mark the record as "deleted".
 Also you'll end up defining a default scope which filters out all those "deleted" records:
 
-```sh_ruby
+```ruby
 default_scope where(:deleted_at => nil)
 ```
 
@@ -65,7 +65,7 @@ in your models. This is a remarkably easy trap to fall into, and takes constant 
 in order to avoid. A different strategy is to use `after_destroy` (or `before_destroy`) callbacks to flag dependant
 records as deleted.
 
-```sh_ruby
+```ruby
 after_destroy :clean_up_your_mess
 ```
 
@@ -79,7 +79,7 @@ a cache miss if you're using fragment caching like you should be!
 * There is soem horribly awful code you can put into your Rails application which will fix
 the scoped -> unscoped association issue.
 
-```sh_ruby
+```ruby
 class ActiveRecord::Associations::Association
   def scoped
     if owner.is_permanent? && owner.deleted_at?

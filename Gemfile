@@ -1,7 +1,8 @@
-source :rubygems
+source 'https://rubygems.org'
 gem 'haml'
 gem 'rack'
-gem 'redcarpet', :git => "git://github.com/lengarvey/redcarpet.git"
+gem 'redcarpet'
 gem 'builder'
 gem 'rake'
 gem 'thin'
+gem 'rouge'

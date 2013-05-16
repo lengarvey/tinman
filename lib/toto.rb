@@ -11,6 +11,8 @@ if RUBY_PLATFORM =~ /win32/
   Markdown = Maruku
 else
   require 'redcarpet'
+  require 'rouge'
+  require 'rouge/plugins/redcarpet'
 end
 
 require 'builder'
@@ -18,6 +20,20 @@ require 'builder'
 $:.unshift File.dirname(__FILE__)
 
 require 'ext/ext'
+
+class MarkdownService
+  class HTMLWithRouge < Redcarpet::Render::HTML
+    include Rouge::Plugins::Redcarpet # yep, that's it.
+  end
+
+  def initialize
+    @markdown = Redcarpet::Markdown.new(HTMLWithRouge, :fenced_code_blocks => true)
+  end
+
+  def render(text)
+    @markdown.render(text)
+  end
+end
 
 module Toto
   Paths = {
@@ -42,7 +58,7 @@ module Toto
 
     def markdown text
       if (options = @config[:markdown])
-        Markdown.new(text.to_s.strip, :fenced_code, :autolink).to_html 
+        MarkdownService.new.render(text.to_s.strip)
       else
         text.strip
       end

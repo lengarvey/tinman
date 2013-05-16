@@ -9,7 +9,7 @@ But I bet everyone who has had to code up something like that has wished there w
 Well, with MongoDB there is! It's called GridFS and it allows files of virtually any size to be stored inside the database.
 Using ruby it's really easy to save files:
 
-```sh_ruby
+```ruby
 # Saving string data
 id = @grid.put("here's some string / binary data")
 
@@ -20,7 +20,7 @@ id2   = @grid.put(image, :filename => "me.jpg")
 
 And super easy to access files:
 
-```sh_ruby
+```ruby
 # Get the string we saved
 file = @grid.get(id)
 
@@ -32,7 +32,7 @@ Using MongoMapper
 -----------------
 John Nunemaker (the author of MongoMapper) has written a small library called Joint which makes it really easy to store and access files.
 
-```sh_ruby
+```ruby
 class Asset
   include MongoMapper::Document
   plugin Joint # add the plugin
@@ -43,7 +43,7 @@ end
 
 Which we can easily integrate with Sinatra/Rack:
 
-```sh_ruby
+```ruby
 # upload an asset
 post '/upload' do
   asset = Asset.create(:file => params[:file][:tempfile])

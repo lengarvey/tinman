@@ -20,7 +20,7 @@ Installing MongoDB 2.1 on OSX
 If you aren't using [homebrew](https://github.com/mxcl/homebrew) you should be.
 To install the current version of MongoDB it's as simple as 
 
-```sh_ruby
+```sh
 brew install mongodb
 ```
 
@@ -30,13 +30,13 @@ be stable until 2.2 you can install 2.1 with the following instructions:
 1. Update the mongodb recipe with the following gist
    https://gist.github.com/2006403 :
 
-```sh_ruby
+```ruby
 brew edit mongodb
 ```
 
 2. Install mongodb 2.1!
 
-```sh_ruby
+```ruby
 brew install mongodb
 ```
 
@@ -65,7 +65,7 @@ I noticed (and should have realised before) was that MongoDB provides an
 Array.prototype.sum function. So in the MongoDB shell the following code
 works:
 
-```sh_javascript
+```javascript
 Array.sum([1,2,3,4,5])
 // => returns 1+2+3+4+5 = 15!
 ```
