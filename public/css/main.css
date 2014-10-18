@@ -151,4 +151,10 @@ body > footer {
   font-size: 18px;
   color: #888;
 }
+img {
+  max-width: 100%;
+}
 
+.content img {
+  display: block;
+}
